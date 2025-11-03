@@ -1004,9 +1004,9 @@
             
             const randomIndex = available[Math.floor(Math.random() * available.length)];
             goToCard(randomIndex);
-            setTimeout(() => {
-                toggleInactive(randomIndex);
-            }, 1300);
+        //     setTimeout(() => {
+        //         toggleInactive(randomIndex);
+        //     }, 1300);
         }
 
         function renderThemes() {
@@ -1074,9 +1074,9 @@
             const cardNumber = parseInt(input.value);
             if (cardNumber >= 1 && cardNumber <= state.questions.length) {
                 goToCard(cardNumber - 1);
-                setTimeout(() => {
-                    toggleInactive(cardNumber - 1);
-                }, 800);
+                // setTimeout(() => {
+                //     toggleInactive(cardNumber - 1);
+                // }, 800);
                 input.value = '';
             } else {
                 alert(`Please enter a number between 1 and ${state.questions.length}`);
